@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: samplewebapp 
+  name: featurebranchapp 
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      app: samplewebapp
+      app: featurebranchapp
   template:
     metadata:
       labels:
-        app: samplewebapp 
+        app: featurebranchapp 
     spec:
       containers:
-        - name: samplewebapp 
+        - name: featurebranchapp 
           image: mydockcontainer.azurecr.io/samplewebapp
           ports:
           - containerPort: 80
