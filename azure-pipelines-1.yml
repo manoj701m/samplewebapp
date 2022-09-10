@@ -15,7 +15,7 @@ variables:
   imageRepository: 'samplewebapp'
   containerRegistry: 'mydockcontainer.azurecr.io'
   dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: 'latest'
   imagePullSecret: 'mydockcontainer21217b36-auth'
 
   # Agent VM image name
