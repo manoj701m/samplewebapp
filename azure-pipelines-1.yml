@@ -3,7 +3,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- main
+- fearure
 
 resources:
 - repo: self
@@ -17,10 +17,6 @@ variables:
   dockerfilePath: '**/Dockerfile'
   tag: 'latest'
   imagePullSecret: 'mydockcontainer21217b36-auth'
-
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
-
 
 stages:
 - stage: Build
